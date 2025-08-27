@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logofaixa {
+  width: 203px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.login-b {
+  background-color: rgb(214, 158, 16);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 60px;
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+form#indexForm .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1; 
+}
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: -1;
+  width: 1920px;
+  height: 1000px;
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  width: 520PX;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  border: 5px solid rgb(214, 158, 16);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(214, 158, 16);
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+.label-data_n {
+  float: inline-start;
+}
+
+.label-gen {
+  float: inline-end;
+}
+
+.label-tel_celular {
+  float: inline-start;
+}
+
+.label-tel_fixo {
+  float: inline-end;
+  width: 240px;
+}
+
+input,
+select {
+  width: 502px;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.cadastro-d_nascimento {
+  width: 110px;
+}
+
+.cadastro-genero {
+  width: 100px;
+  background-color: white;
+}
+
+.cadastro-cpf {
+  width: 100px;
+}
+
+.cadastro-tel_celular {
+  width: 112px;
+}
+
+.cadastro-tel_fixo {
+  width: 110px;
+}
+
+.cadastro-cep {
+  width: 70px;
+}
+
+.cadastro-cidade,
+.cadastro-estado {
+  width: 239.7px;
+}
+
+.cadastro-senha {
+  width: 239.7px;
+}
+
+.cadastro-conf_senha {
+  width: 239.7px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  width: 248px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn,
+.reset-btn {
+  background-color: rgb(214, 158, 16);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: rgb(214, 140, 16);
+}
+
+.reset-btn:hover {
+  background-color: rgb(214, 140, 16);
+}
+
+.error {
+  color: #fff;
+  background-color: #e74c3c;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-fundo {
+  width: 1000px;
+}
+
+body {
+  background-image: url('../Imagem/fundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}

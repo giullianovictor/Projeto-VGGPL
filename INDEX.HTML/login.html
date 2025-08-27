@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="MenuFixo" class="Menu">
+            <a class="Logo" href="indexfoundmanga.html">
+                <img class="logofaixa" src="imagem/LOGO.jpeg" alt="Logo">
+            </a>
+        </div>
+        <div class="right-section">
+            <a href="login.html" class="login-b">Login</a>
+        </div>
+    </header>
+    <form>
+        <div class="login-container">
+            <h2>Login</h2>
+            <div id="error" class="error"></div>
+            <input type="text" id="usuario" placeholder="Usuário">
+            <input type="password" id="senha" placeholder="Senha">
+            <div class="register-container">
+                <button type="button" class="btn login-btn" onclick="login()">Entrar</button>
+                <button type="reset" class="btn btn-reset">Limpar</button>
+                <label>Ainda não se cadastrou?, </label>
+                <a href="cadastro.html" class="register">Cadastre-se.</a>
+            </div>
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="anoAtual"></span> Maciel - Todos os direitos reservados.</p>
+            <p>
+                Email: <a href="mailto:lucasmaciel14meliodas@gmail.com">lucasmaciel14meliodas@gmail.com</a> |
+                Telefone: <a href="tel:+5521969335131">(21) 96933-5131</a>
+            </p>
+            <p>
+                Siga-me:
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Foundneptune" target="_blank">GitHub</a> |
+                <a href="https://x.com/LMS_MACIEL" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+    <script src="JavaScript/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/cadastro.css" />
+  <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div id="MenuFixo" class="Menu">
+      <a class="Logo" href="indexfoundmanga.html">
+        <img class="logofaixa" src="imagem/LOGO.jpeg" alt="Logo" />
+      </a>
+    </div>
+    <div class="right-section">
+      <a href="login.html" class="login-b">Login</a>
+    </div>
+  </header>
+  <form id="cadastroForm">
+    <div class="login-container">
+      <h1>Cadastro</h1>
+      <div id="mensagem" class="error"></div>
+      <input type="text" id="nome" maxlength="80" placeholder="Nome Completo" class="cadastro-nome" required />
+
+      <label class="label-data_n">Data de Nascimento:
+        <input type="date" id="nascimento" class="cadastro-d_nascimento" />
+      </label>
+      <label class="label-gen">Gênero:
+        <select id="sexo" class="cadastro-genero">
+          <option value="">Selecione</option>
+          <option>Masculino</option>
+          <option>Feminino</option>
+          <option>Outro</option>
+        </select>
+      </label>
+      <input type="text" id="nomeMaterno" maxlength="80" placeholder="Nome Materno" class="cadastro-nome_materno" />
+      <input type="text" id="cpf" maxlength="14" placeholder="CPF" class="cadastro-cpf" />
+      <input type="email" id="email" placeholder="E-mail" class="cadastro-email" />
+      <label class="label-tel_celular">Telefone Celular:
+        <input type="text" id="celular" placeholder="(+55)xxxxxxx-xxxx" minlength="11" class="cadastro-tel_celular" />
+      </label>
+      <label class="label-tel_fixo">Telefone Fixo:
+        <input type="text" id="fixo" placeholder="(+55)xxxxxx-xxxx" maxlength="17" class="cadastro-tel_fixo" />
+      </label>
+      <input type="text" id="cep" maxlength="9" placeholder="CEP" class="cadastro-cep" />
+      <input type="text" id="endereco" placeholder="Endereço" required />
+      <input type="text" id="cidade" placeholder="Cidade" class="cadastro-cidade" />
+      <input type="text" id="estado" placeholder="Estado" class="cadastro-estado" />
+      <input type="text" id="login" minlength="6" maxlength="15" placeholder="Login" class="cadastro-login" /><br />
+      <div class="flex-row">
+        <input type="password" id="senha" minlength="8" placeholder="Senha" class="cadastro-senha" />
+        <input type="password" id="confirmarSenha" placeholder="Confirme a senha" class="cadastro-conf_senha" />
+      </div>
+      <div class="buttons">
+        <button type="button" class="submit-btn" onclick="validarCadastro()">
+          Enviar
+        </button>
+        <button type="reset" class="reset-btn">Limpar</button>
+      </div>
+    </div>
+  </form>
+  <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="anoAtual"></span> Maciel - Todos os direitos reservados.</p>
+            <p>
+                Email: <a href="mailto:lucasmaciel14meliodas@gmail.com">lucasmaciel14meliodas@gmail.com</a> |
+                Telefone: <a href="tel:+5521969335131">(21) 96933-5131</a>
+            </p>
+            <p>
+                Siga-me:
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Foundneptune" target="_blank">GitHub</a> |
+                <a href="https://x.com/LMS_MACIEL" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+  <script src="JavaScript/cadastro.js"></script>
+</body>
+
+</html>

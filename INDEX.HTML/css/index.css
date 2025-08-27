@@ -1,0 +1,430 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('../Imagem/fundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logofaixa {
+    width: 203px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    padding-left: 15px;
+    border: 3px solid rgb(214, 158, 16);
+    border-radius: 20px;
+    width: 300px;
+    text-align: left;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.login-b {
+    background-color: rgb(214, 158, 16);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.login-b:hover {
+    background-color: rgb(214, 140, 16);
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 60px;
+}
+
+@media (max-width: 400px) {
+    .search-box input {
+        width: 80px;
+        font-size: 12px;
+    }
+    .manga-card img{
+        height: 150px;
+    }
+    .menu-pro ul {
+        gap: 10px;
+    }
+    .home-container {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .search-box {
+        order: 2;
+    }
+
+    .right-section {
+        order: 3;
+    }
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: rgb(214, 158, 16);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 70px;
+}
+
+.logout-btn:hover{
+    background-color: rgb(214, 140, 16);
+}
+span {
+    color: rgb(214, 158, 16);
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+form#indexForm .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+    width: 1920px;
+    height: 1550px;
+}
+
+.home-container {
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    margin: 40px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 800px;
+    border: 3px solid rgb(214, 158, 16);
+}
+
+.menu-pro {
+    background-color: black;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.menu-pro ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 1100px;
+    border-radius: 20px;
+}
+
+.menu-pro li {
+    position: relative;
+}
+
+.menu-pro a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding: 8px 4px;
+    transition: color 0.3s ease;
+}
+
+.menu-pro a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(214, 158, 16);
+    transition: width 0.3s ease;
+}
+
+.menu-pro a:hover {
+    color: rgb(214, 158, 16);
+}
+
+.menu-pro a:hover::after {
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 28px;
+    color: rgb(214, 158, 16);
+}
+.conteudo{
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+#inicio {
+    display: block ;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.manga-cards {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 6px;
+    justify-items: center;
+    min-height: 500px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.manga-card {
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.manga-card:hover {
+    transform: scale(1.02);
+}
+.manga-card img {
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.manga-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+.manga-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .menu-pro ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .manga-card img {
+        height: 200px;
+    }
+}
+#sobre {
+    background: #f5f7fa;
+    padding: 40px 20px;
+    border-radius: 16px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+#sobre h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.menu-pro .dropdown {
+  position: relative;
+}
+
+.menu-pro .dropdown-menu {
+  display: none;
+  position: absolute;
+  background: black;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.menu-pro .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-pro .dropdown-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap;
+}
+
+.menu-pro .dropdown-menu li:hover {
+  background-color: #333;
+  color: rgb(214, 158, 16);
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.manga-card .preco {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(214, 158, 16);
+    margin-top: 10px;
+}
+
+.manga-card .comprar-btn {
+    background-color: rgb(214, 158, 16);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manga-card .comprar-btn:hover {
+    background-color: rgb(214, 140, 16);
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(214, 158, 16);
+    margin-left: 5px;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.cart-btn:hover {
+    transform: scale(1.1);
+}
+
+a:focus, button:focus, input:focus {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+}

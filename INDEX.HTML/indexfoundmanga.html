@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Mangás</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <header>
+        <div id="MenuFixo" class="Menu">
+            <a class="Logo" href="indexfoundmanga.html">
+                <img class="logofaixa" src="imagem/LOGO.jpeg" alt="Logo">
+            </a>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            <a href="carrinho.html" class="cart-btn">🛒</a>
+        </div>
+        <div class="right-section">
+            <a href="login.html" class="login-b">Login</a>
+            <div class="user-info" id="userInfo" style="display: none;">
+                <span id="nomeUsuario"></span>
+                <button onclick="logout()" class="logout-btn">Sair</button>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <main class="home-container">
+        <nav class="menu-pro">
+            <ul>
+                <li><a href="#" onclick="mostrarConteudo('inicio')">Loja</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorias ▼</a>
+                    <ul class="dropdown-menu">
+                        <li onclick="filtrarPorCategoria('todos')">Todos</li>
+                        <li onclick="filtrarPorCategoria('acao')">Ação</li>
+                        <li onclick="filtrarPorCategoria('aventura')">Aventura</li>
+                        <li onclick="filtrarPorCategoria('comedia')">Comédia</li>
+                        <li onclick="filtrarPorCategoria('drama')">Drama</li>
+                        <li onclick="filtrarPorCategoria('fantasia')">Fantasia</li>
+                        <li onclick="filtrarPorCategoria('militar')">Militar</li>
+                        <li onclick="filtrarPorCategoria('shounen')">Shounen</li>
+                        <li onclick="filtrarPorCategoria('super-poder')">Super-Poder</li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="mostrarConteudo('sobre')">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <section id="inicio" class="conteudo">
+            <h2><b>
+                    <p>Compre os melhores mangás com preços imperdíveis!</p>
+                </b></h2>
+            <div class="manga-cards">
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol1.jpg" alt="One Piece">
+                    <h3>One Piece Vol. 1</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 1', 41.90,'imagem/One_Piece_Vol1.jpg')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen militar acao super-poder drama fantasia">
+                    <img src="imagem/attaque_on_titan_vol1.jpg" alt="Attack on Titan">
+                    <h3>Attack on Titan Vol. 1</h3>
+                    <b>
+                        <p>R$ 20,93</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Attack on Titan Vol. 1', 20.93,'imagem/attaque_on_titan_vol1.jpg')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol2.webp" alt="One Piece">
+                    <h3>One Piece Vol. 2</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 2', 41.90,'imagem/One_Piece_Vol2.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol3.webp" alt="One Piece">
+                    <h3>One Piece Vol. 3</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 3', 41.90,'imagem/One_Piece_Vol3.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol4.webp" alt="One Piece">
+                    <h3>One Piece Vol. 4</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn "
+                        onclick="adicionarAoCarrinho('One Piece Vol. 4', 41.90,'imagem/One_Piece_Vol4.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol5.webp" alt="One Piece">
+                    <h3>One Piece Vol. 5</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 5', 41.90,'imagem/One_Piece_Vol5.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol6.webp" alt="One Piece">
+                    <h3>One Piece Vol. 6</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 6', 41.90,'imagem/One_Piece_Vol6.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol7.webp" alt="One Piece">
+                    <h3>One Piece Vol. 7</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 7', 41.90,'imagem/One_Piece_Vol7.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol8.webp" alt="One Piece">
+                    <h3>One Piece Vol. 8</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 8', 41.90,'imagem/One_Piece_Vol8.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol9.webp" alt="One Piece">
+                    <h3>One Piece Vol. 9</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 9', 41.90,'imagem/One_Piece_Vol9.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen acao militar comedia super-poder aventura fantasia">
+                    <img src="imagem/One_Piece_Vol10.webp" alt="One Piece">
+                    <h3>One Piece Vol. 10</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('One Piece Vol. 10', 41.90,'imagem/One_Piece_Vol10.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="drama">
+                    <img src="imagem/Another_Vol1.jpg" alt="Another">
+                    <h3>Another Vol. 1</h3>
+                    <b>
+                        <p>R$ 34,50</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Another Vol. 1', 34,50,'imagem/Another_Vol1.jpg')">Adicionar ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="drama">
+                    <img src="imagem/Another_Vol2.jpg" alt="Another">
+                    <h3>Another Vol. 2</h3>
+                    <b>
+                        <p>R$ 29,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Another Vol. 2', 29,90,'imagem/Another_Vol2.jpg')">Adicionar ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="drama">
+                    <img src="imagem/Another_Vol3.jpg" alt="Another">
+                    <h3>Another Vol. 3</h3>
+                    <b>
+                        <p>R$ 19,75</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Another Vol. 3', 19,75,'imagem/Another_Vol3.jpg')">Adicionar ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="drama">
+                    <img src="imagem/Another_Vol4.jpg" alt="Another">
+                    <h3>Another Vol. 4</h3>
+                    <b>
+                        <p>R$ 150,00</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Another Vol. 4', 150,'imagem/Another_Vol4.jpg')">Adicionar ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen militar acao super-poder drama fantasia">
+                    <img src="imagem/attaque_on_titan_vol2.webp" alt="Attack on Titan">
+                    <h3>Attack on Titan Vol. 2</h3>
+                    <b>
+                        <p>R$ 29,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Attack on Titan Vol. 2', 29,90,'imagem/attaque_on_titan_vol2.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen militar acao super-poder drama fantasia">
+                    <img src="imagem/attaque_on_titan_vol3.webp" alt="Attack on Titan">
+                    <h3>Attack on Titan Vol. 3</h3>
+                    <b>
+                        <p>R$ 29,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Attack on Titan Vol. 3', 29,90,'imagem/attaque_on_titan_vol3.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen militar acao super-poder drama fantasia">
+                    <img src="imagem/attaque_on_titan_vol4.jpg" alt="Attack on Titan">
+                    <h3>Attack on Titan Vol. 4</h3>
+                    <b>
+                        <p>R$ 29,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Attack on Titan Vol. 4', 29,90,'imagem/attaque_on_titan_vol4.jpg')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen militar acao super-poder drama fantasia">
+                    <img src="imagem/attaque_on_titan_vol5.webp" alt="Attack on Titan">
+                    <h3>Attack on Titan Vol. 5</h3>
+                    <b>
+                        <p>R$ 29,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Attack on Titan Vol. 5', 29,90,'imagem/attaque_on_titan_vol5.webp')">Adicionar
+                        ao
+                        carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol1.webp" alt="Solo Leveling Vol. 1">
+                    <h3>Solo Leveling Vol. 1</h3>
+                    <b>
+                        <p>R$ 74,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 1', 74.90,'imagem/Solo_Leveling_Vol1.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol2.webp" alt="Solo Leveling Vol. 2">
+                    <h3>Solo Leveling Vol. 2</h3>
+                    <b>
+                        <p>R$ 74,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 2', 74.90,'imagem/Solo_Leveling_Vol2.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol3.webp" alt="Solo Leveling Vol. 3">
+                    <h3>Solo Leveling Vol. 3</h3>
+                    <b>
+                        <p>R$ 74,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 3', 74.90,'imagem/Solo_Leveling_Vol3.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol4.webp" alt="Solo Leveling Vol. 4">
+                    <h3>Solo Leveling Vol. 4</h3>
+                    <b>
+                        <p>R$ 69,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 4', 69.90,'imagem/Solo_Leveling_Vol4.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol5.webp" alt="Solo Leveling Vol. 5">
+                    <h3>Solo Leveling Vol. 5</h3>
+                    <b>
+                        <p>R$ 74,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 5', 74.90,'imagem/Solo_Leveling_Vol5.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol6.webp" alt="Solo Leveling Vol. 6">
+                    <h3>Solo Leveling Vol. 6</h3>
+                    <b>
+                        <p>R$ 74,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 6', 74.90,'imagem/Solo_Leveling_Vol6.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Solo_Leveling_Vol7.webp" alt="Solo Leveling Vol. 7">
+                    <h3>Solo Leveling Vol. 7</h3>
+                    <b>
+                        <p>R$ 74,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Solo Leveling Vol. 7', 74.90,'imagem/Solo_Leveling_Vol7.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen comedia fantasia aventura acao">
+                    <img src="imagem/Black_Clover_Vol1.webp" alt="Black Clover Vol. 1">
+                    <h3>Black Clover Vol. 1</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Black Clover Vol. 1', 34.90,'imagem/Black_Clover_Vol1.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen comedia fantasia aventura acao">
+                    <img src="imagem/Black_Clover_Vol2.webp" alt="Solo Leveling Vol. 2">
+                    <h3>Black Clover Vol. 2</h3>
+                    <b>
+                        <p>R$ 34,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Black Clover Vol. 2', 34.90,'imagem/Black_Clover_Vol2.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen comedia fantasia aventura acao">
+                    <img src="imagem/Black_Clover_Vol3.webp" alt="Solo Leveling Vol. 3">
+                    <h3>Black Clover Vol. 3</h3>
+                    <b>
+                        <p>R$ 34,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Black Clover Vol. 3', 34.90,'imagem/Black_Clover_Vol3.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen comedia fantasia aventura acao">
+                    <img src="imagem/Black_Clover_Vol4.webp" alt="Solo Leveling Vol. 4">
+                    <h3>Black Clover Vol. 4</h3>
+                    <b>
+                        <p>R$ 41,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Black Clover Vol. 4', 41.90,'imagem/Black_Clover_Vol4.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen comedia fantasia aventura acao">
+                    <img src="imagem/Black_Clover_Vol5.jpg" alt="Solo Leveling Vol. 5">
+                    <h3>Black Clover Vol. 5</h3>
+                    <b>
+                        <p>R$ 34.90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Black Clover Vol. 5', 34.90,'imagem/Black_Clover_Vol5.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Demon_Slayer_Vol1.webp" alt="Demon Slayer Vol. 1">
+                    <h3>Demon Slayer Vol. 1</h3>
+                    <b>
+                        <p>R$ 43,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Demon Slayer Vol. 1', 43,90,'imagem/Demon_Slayer_Vol1.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Demon_Slayer_Vol2.webp" alt="Demon Slayer Vol. 2">
+                    <h3>Demon Slayer Vol. 2</h3>
+                    <b>
+                        <p>R$ 43,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Demon Slayer Vol. 2', 43,90,'imagem/Demon_Slayer_Vol2.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Demon_Slayer_Vol3.webp" alt="Demon Slayer Vol. 3">
+                    <h3>Demon Slayer Vol. 3</h3>
+                    <b>
+                        <p>R$ 43,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Demon Slayer Vol. 3', 43,90,'imagem/Demon_Slayer_Vol3.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Demon_Slayer_Vol4.webp" alt="Demon Slayer Vol. 4">
+                    <h3>Demon Slayer Vol. 4</h3>
+                    <b>
+                        <p>R$ 43,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Demon Slayer Vol. 4', 43.90,'imagem/Demon_Slayer_Vol4.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+                <div class="manga-card" data-categoria="shounen drama fantasia aventura acao">
+                    <img src="imagem/Demon_Slayer_Vol5.webp" alt="Demon Slayer Vol. 5">
+                    <h3>Demon Slayer Vol. 5</h3>
+                    <b>
+                        <p>R$ 43,90</p>
+                    </b>
+                    <button class="comprar-btn"
+                        onclick="adicionarAoCarrinho('Demon Slayer Vol. 5', 43,90,'imagem/Demon_Slayer_Vol5.webp')">Adicionar
+                        ao carrinho</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="sobre" class="conteudo" style="display: none;">
+            <h2>Sobre a Loja</h2>
+            <p>Bem-vindo à Found Mangás! Somos apaixonados por histórias em quadrinhos japonesas. Nossa missão é
+                oferecer uma variedade incrível de títulos para todos os gostos. Explore e encontre seu novo mangá
+                favorito!</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="anoAtual"></span> Found Mangás - Todos os direitos reservados.</p>
+            <p>
+                Email: <a href="mailto:lucasmaciel14meliodas@gmail.com">   </a> |
+                Telefone: <a href="tel:+5521969335131">   </a>
+            </p>
+            <p>
+                Siga-me:
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                    target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Foundneptune" target="_blank">GitHub</a> |
+                <a href="https://x.com/LMS_MACIEL" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+    <script src="JavaScript/index.js"></script>
+</body>
+
+</html>

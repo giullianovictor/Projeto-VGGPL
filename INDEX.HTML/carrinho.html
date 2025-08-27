@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <header>
+        <div id="MenuFixo" class="Menu">
+            <a class="Logo" href="indexfoundmanga.html">
+                <img class="logofaixa" src="imagem/LOGO.jpeg" alt="Logo">
+            </a>
+        </div>
+        <div class="right-section">
+            <a href="login.html" class="login-b">Login</a>
+            <div class="user-info" id="userInfo" style="display: none;">
+                <span id="nomeUsuario"></span>
+                <button onclick="logout()" class="logout-btn">Sair</button>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <main class="carrinho-container">
+        <h1>Carrinho de Compras</h1>
+        <button id="desmarcarTodos" style="display: none;">Desmarcar todos os itens</button>
+        <div id="listaProdutos"></div>
+        <hr class="linha-separadora" />
+        <div class="subtotal">
+            <span class="excluir remover-todos" id="removerTodos" style="display: none;">Remover todos os Itens</span>
+            <div class="resumo-subtotal">
+                <label><strong>Subtotal:</strong></label>
+                <span id="quantidadeSelecionada">0 produtos</span> -
+                <span id="valorTotal">R$ 0,00</span>
+            </div>
+        </div>
+        <div class="finalizar-container">
+            <button id="finalizarCompra" class="finalizar-compra">Encaminhar para Pagamento</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="anoAtual"></span> Fond Mangás - Todos os direitos reservados.</p>
+            <p>
+                Email: <a href="mailto:lucasmaciel14meliodas@gmail.com">lucasmaciel14meliodas@gmail.com</a> |
+                Telefone: <a href="tel:+5521969335131">(21) 96933-5131</a>
+            </p>
+            <p>
+                Siga-me:
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                    target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Foundneptune" target="_blank">GitHub</a> |
+                <a href="https://x.com/LMS_MACIEL" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+    <script src="JavaScript/carrinho.js"></script>
+</body>
+
+</html>
