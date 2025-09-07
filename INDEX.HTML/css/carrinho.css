@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
-  background-image: url('../Imagem/fundo.png');
+  background-image: url('../Imagem/fundopp.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@ header {
 }
 
 .login-b {
-    background-color: rgb(214, 158, 16);
+    background-color: rgb(141, 16, 214);
     border: none;
     color: white;
     padding: 12px 20px;
@@ -46,7 +46,7 @@ header {
     text-decoration: none;
 }
 .login-b:hover {
-    background-color: rgb(214, 140, 16);
+    background-color: rgb(141, 16, 214);
 }
 .right-section {
     display: flex;
@@ -74,12 +74,12 @@ header {
     align-items: center;
     gap: 10px;
     margin-left: 20px;
-    color: rgb(214, 140, 16);
+    color: rgb(141, 16, 214);
     font-weight: bold;
 }
 
 .logout-btn {
-    background-color: rgb(214, 158, 16);
+    background-color: rgb(141, 16, 214);
     border: none;
     color: white;
     padding: 8px 16px;
@@ -90,7 +90,7 @@ header {
 }
 
 .logout-btn:hover{
-    background-color: rgb(214, 140, 16);
+    background-color: rgb(141, 16, 214);
 }
 .carrinho-container {
   max-width: 800px;
@@ -104,13 +104,13 @@ header {
 
 h1 {
   text-align: center;
-  color: rgb(214, 158, 16);
+  color: rgb(141, 16, 214);
 }
 
 #desmarcarTodos {
   display: block;
   margin: 10px auto 20px;
-  background-color: rgb(214, 158, 16);
+  background-color: rgb(141, 16, 214);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -158,7 +158,7 @@ h1 {
   font-weight: bold;
   border-radius: 6px;
   border: none;
-  background-color: rgb(214, 158, 16);
+  background-color: rgb(141, 16, 214);
   color: white;
   cursor: pointer;
 }
@@ -221,7 +221,7 @@ h1 {
 }
 
 .finalizar-compra {
-  background-color: rgb(214, 158, 16);
+  background-color: rgb(141, 16, 214);
   color: white;
   border: none;
   padding: 12px 25px;
@@ -238,7 +238,7 @@ h1 {
 }
 
 .finalizar-compra:hover {
-  background-color: rgb(214, 140, 16);
+  background-color: rgb(141, 16, 214);
 }
 
 .footer {
