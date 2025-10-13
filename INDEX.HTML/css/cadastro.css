@@ -25,7 +25,7 @@ header {
 }
 
 .login-b {
-  background-color: rgb(214, 158, 16);
+  background-color: rgb(141, 16, 214);
   border: none;
   color: white;
   padding: 12px 20px;
@@ -77,12 +77,12 @@ form#indexForm .img {
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: block;
-  border: 5px solid rgb(214, 158, 16);
+  border: 5px solid rgb(141, 16, 214);;
 }
 
 h1 {
   text-align: center;
-  color: rgb(214, 158, 16);
+  color: rgb(141, 16, 214);
 }
 
 label {
@@ -173,16 +173,16 @@ button {
 
 .submit-btn,
 .reset-btn {
-  background-color: rgb(214, 158, 16);
+  background-color: rgb(141, 16, 214);
   color: white;
 }
 
 .submit-btn:hover {
-  background-color: rgb(214, 140, 16);
+  background-color: rgb(141, 16, 214);
 }
 
 .reset-btn:hover {
-  background-color: rgb(214, 140, 16);
+  background-color: rgb(141, 16, 214);
 }
 
 .error {
@@ -204,7 +204,7 @@ button {
 }
 
 body {
-  background-image: url('../Imagem/fundo.png');
+  background-image: url('../Imagem/fundopp.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
